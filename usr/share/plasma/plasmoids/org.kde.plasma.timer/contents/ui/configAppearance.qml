@@ -1,0 +1,81 @@
+    /*
+ *  SPDX-FileCopyrightText: 2015 Bernhard Friedreich <friesoft@gmail.com>
+ *
+ *  SPDX-License-Identifier: GPL-2.0-or-later
+ */
+
+import QtQuick 2.5
+import QtQuick.Controls 2.5 as QQC2
+import QtQuick.Layouts 1.0
+
+import org.kde.kirigami 2.5 as Kirigami
+
+Kirigami.FormLayout {
+    id: appearancePage
+
+    property alias cfg_showTitle: showTitle.checked
+    property alias cfg_title: title.text
+
+    property alias cfg_showSeconds: showSeconds.checked
+
+    property alias cfg_showNotification: showNotification.checked
+    property alias cfg_notificationText: notificationText.text
+
+    RowLayout {
+        Layout.fillWidth: true
+
+        Kirigami.FormData.label: i18nc("@title:label", "Display:")
+
+        QQC2.CheckBox {
+            id: showTitle
+
+
+            text: i18nc("@option:check", "Show title:");
+            onClicked: {
+                if (checked) {
+                    title.forceActiveFocus();
+                }
+            }
+        }
+
+        QQC2.TextField {
+            id: title
+            Layout.fillWidth: true
+            enabled: showTitle.checked
+        }
+    }
+
+    QQC2.CheckBox {
+        id: showSeconds
+        text: i18nc("@option:check", "Show seconds");
+    }
+
+
+    Item {
+        Kirigami.FormData.isSection: true
+    }
+
+
+    RowLayout {
+        Layout.fillWidth: true
+
+        Kirigami.FormData.label: i18nc("@title:label", "Notifications:")
+
+        QQC2.CheckBox {
+            id: showNotification
+            text: i18nc("@option:check", "Show notification text:");
+            onClicked: {
+                if (checked) {
+                    notificationText.forceActiveFocus();
+                }
+            }
+        }
+
+        QQC2.TextField {
+            id: notificationText
+            Layout.fillWidth: true
+            enabled: showNotification.checked
+        }
+    }
+}
+

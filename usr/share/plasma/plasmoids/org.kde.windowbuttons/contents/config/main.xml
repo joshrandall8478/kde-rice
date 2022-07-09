@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+      http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+  <kcfgfile name=""/>
+
+  <group name="General">
+    <entry name="useCurrentDecoration" type="Bool">
+      <default>true</default>
+      <label>use the system current decoration at all times. The decoration is updated accordingly when needed</label>
+    </entry>
+    <entry name="selectedPlugin" type="String">
+      <default>org.kde.breeze</default>
+      <label>user preferred decoration plugin to use</label>
+    </entry>
+    <entry name="selectedScheme" type="String">
+      <default>_plasmatheme_</default>
+      <label>user preferred color scheme to use with the selected plugin</label>
+    </entry>
+    <entry name="selectedTheme" type="String">
+      <label>user preferred theme to use with the selected plugin</label>
+    </entry>
+    <entry name="buttons" type="String">
+      <default>5|4|3|10|2|9</default>
+      <label>buttons to show in applet</label>
+    </entry>
+    <entry name="visibility" type="Enum">
+      <choices>
+         <choice name="AlwaysVisible"/>
+         <choice name="ActiveWindow"/>
+         <choice name="ActiveMaximizedWindow"/>
+      </choices>
+      <label>when the applet will be visible</label>
+      <default>0</default>
+    </entry>
+    <entry name="filterByScreen" type="Bool">
+      <default>true</default>
+      <label>if false active window can be on any screen</label>
+    </entry>
+    <entry name="hiddenState" type="Enum">
+      <choices>
+         <choice name="SlideOut"/>
+         <choice name="EmptySpace"/>
+      </choices>
+      <label>when the applet should be hidden how it should behave</label>
+      <default>0</default>
+    </entry>
+    <entry name="inactiveStateEnabled" type="Bool">
+      <default>false</default>
+      <label>draw buttons in inactive state when is needed</label>
+    </entry>
+    <entry name="useDecorationMetrics" type="Bool">
+      <default>true</default>
+      <label>use the discovered decoration metrics in case there are any in order to look consistent with window titlebars</label>
+    </entry>
+    <entry name="buttonSizePercentage" type="Int">
+      <default>100</default>
+      <label>the buttons size relevant to panel thickness</label>
+    </entry>    
+    <entry name="lengthFirstMargin" type="Int">
+      <default>0</default>
+      <label>first margin used to increase or decrease the icons distance from surrounding applets</label>
+    </entry>
+    <entry name="lengthLastMargin" type="Int">
+      <default>0</default>
+      <label>last margin used to increase or decrease the icons distance from surrounding applets</label>
+    </entry>
+    <entry name="lengthMarginsLock" type="Bool">
+      <default>true</default>
+      <label>used only by the settings window in order to remember the user choice concerning the locker</label>
+    </entry>
+    <entry name="spacing" type="Int">
+      <default>4</default>
+      <label>spacing between icons</label>
+    </entry>
+    <entry name="formFactor" type="Int">
+      <default>2</default>
+      <label>it is used in order to inform settings window about the plasmoid form factor. 2=Horizontal and 3=Vertical</label>
+    </entry>
+    <entry name="containmentType" type="Enum">
+      <choices>
+         <choice name="Loading"/>
+         <choice name="Plasma"/>
+         <choice name="Latte"/>
+      </choices>
+      <label>it helps to enable/disable options that are specific to plasma or Latte panels</label>
+      <default>0</default>
+    </entry>
+  </group>
+</kcfg>
