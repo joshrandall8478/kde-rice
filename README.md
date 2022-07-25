@@ -13,6 +13,12 @@ Most of what is mentioned here can be installed via the KDE store `discover`. To
 
 ```git clone https://github.com/joshrandall8478/kde-rice```
 
+Also to add the icon for the application launcher on the top panels, make sure to do this after cloning:
+```
+cd kde-rice/home 
+cp .arch-application-launcher.png ~
+```
+
 # Theming
 *The following should be easily accessible through the KDE store*
 - Original global theme - Monochrome
