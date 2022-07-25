@@ -11,7 +11,9 @@ README.md edited: 07/25/22 19:15
 # Installation
 Most of what is mentioned here can be installed via the KDE store `discover`. To download the repository, perform the following command and import the `latte-dock` files into the applicaton.
 
-```git clone https://github.com/joshrandall8478/kde-rice```
+```
+git clone https://github.com/joshrandall8478/kde-rice
+```
 
 Also to add the icon for the application launcher on the top panels, make sure to do this after cloning:
 ```
