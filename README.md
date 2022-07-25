@@ -1,1 +1,3 @@
 # kde-rice
+
+# Information
