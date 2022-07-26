@@ -1,5 +1,7 @@
 # Pursuit KDE Rice
 README.md edited: 07/25/22 19:15
+[Link to Video](https://www.youtube.com/watch?v=7tWTagDykiI)
+
 # Information
 - Operating System: [Arch Linux](https://archlinux.org/)
 - Terminal: [Kitty](https://sw.kovidgoyal.net/kitty/) and yakuake
